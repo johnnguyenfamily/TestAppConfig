@@ -9,6 +9,8 @@ It also integrates with the following features:
 
 Note: to  create the secrets.json file, TestAppConfig (Right-Mouse click) -> Manage User Secrets
 
+```
 {
   "ConnectionStrings:AppConfig": "App Configuration -> Access Keys -> Connection string"
 }
+```
