@@ -61,6 +61,11 @@ namespace TestAppConfig
                                 //    refresh.Register("TestApp:Settings:Sentinel", refreshAll: true)
                                 //           .SetCacheExpiration(new TimeSpan(0, 0, 5));
                                 //}));
+                                
+                                // INTEGRATE with Key Vault. Required the following
+                                //   1. Create App Service (TestAppService123)
+                                //   2. Add TestAppService123 to App Configuration with "App Configuration Data Reader" role
+                                //   3. Add TestAppService123 to KeyVault's access policy
                                 .ConfigureKeyVault(kv =>
                                 {
                                     kv.SetCredential(new DefaultAzureCredential());
